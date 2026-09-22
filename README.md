@@ -1,5 +1,8 @@
 # Spend Tracker
 
+🚀 **Live Application:** [https://spend-tracker-1.onrender.com](https://spend-tracker-1.onrender.com)  
+📖 **API Documentation:** [https://spend-tracker-1.onrender.com/docs](https://spend-tracker-1.onrender.com/docs)
+
 A small service for logging expenses and viewing spend summaries, with a lightweight
 two-page HTML/JS frontend (Expenses, Summary).
 
