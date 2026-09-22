@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Spend Tracker — Summary</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="page-header-row">
+  <div class="page-header">
+    <h1>Spend Tracker</h1>
+    <p>See totals, category breakdowns, and month-over-month spend changes.</p>
+  </div>
+  <div class="api-key-inline">
+    <label for="apiKey">API Key</label>
+    <input id="apiKey" type="text">
+  </div>
+</div>
+
+<nav class="tabs">
+  <a href="/index.html">Expenses</a>
+  <a href="/summary.html" class="active">Summary</a>
+</nav>
+
+<section>
+  <h2>Summary</h2>
+  <div class="month-picker">
+    <div class="field">
+      <label for="monthSelect">Month</label>
+      <select id="monthSelect"></select>
+    </div>
+    <div class="field">
+      <label for="yearSelect">Year</label>
+      <select id="yearSelect"></select>
+    </div>
+  </div>
+  <div class="actions">
+    <button type="button" id="refreshBtn">Refresh Summary</button>
+  </div>
+  <div class="banner" id="summaryBanner" role="status" aria-live="polite"></div>
+  <div id="summaryContent" class="content-block">
+    <p class="empty-state">Loading…</p>
+  </div>
+</section>
+
+<script src="/app.js"></script>
+<script src="/js/month-picker.js"></script>
+<script src="/js/summary-page.js"></script>
+</body>
+</html>
